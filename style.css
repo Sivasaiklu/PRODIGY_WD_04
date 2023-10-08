@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: deeppink;
+    cursor: pointer;
+}
+
+.logo::first-letter{
+    font-size: 50px;
+    border: 2px solid deeppink;
+    border-right: transparent;
+    padding-left: 5px;
+    color: blue;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:tomato;
+}
+
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: deeppink;
+    transition: .5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.button{
+    background-color: deeppink;
+    color: whitesmoke;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    border: 2px solid deeppink;
+}
+
+.button:hover{
+    background: transparent;
+    color: deeppink;
+}
+
+.detail{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+.detail h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.detail h1 span{
+    color: deeppink;
+}
+
+.detail p{
+    color: black;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 10px solid deeppink;
+    cursor: pointer;
+}
+
+.image img:hover{
+    transform: scale(1.1); 
+    transition: 0.3s;
+    transform: rotate(360deg);
+    opacity: 1; 
+}
+
+.image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+
+.skill{
+    position: absolute;
+    top: 80%;
+    left: 8%;
+}
+
+.skill h1{
+    color: deeppink;
+}
+
+.skill ul{
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.skill-image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0.5;
+    right: 200px;
+}
+
+.skill-image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 10px solid deeppink;
+    cursor: pointer;
+}
+
+.skill1{
+    position: absolute;
+    top: 120%;
+    left: 8%;
+}
+
+.skill1 h1{
+    color: deeppink;
+}
+
+.skill1 ul{
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+footer{
+    position: absolute;
+    top:150%;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    color: maroon;
+    left: 50%;
+    padding: 10px ;
+    cursor: pointer;
+    background-size: 100px;
+}
+
+footer:hover{
+    text-decoration: underline;
+    opacity: 1;
+
+}
+
+
